@@ -1,0 +1,26 @@
+@import "/css/normalize.css";
+
+@font-face {
+    font-family: 'matrix';
+    src: url(/fonts/Matrix-MZ4P.ttf);
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url(/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'kodemono';
+    src: url(/fonts/KodeMono-Regular.ttf);
+}
+
+* {
+    font-family: 'kodemono';
+    box-sizing: border-box;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
