@@ -6,6 +6,7 @@
             </div>
 
             <div>
+                <input type="checkbox" id="headerAppCheckMenu" />
                 <nav id="headerAppMenu">
                     <ul>
                         <li>
@@ -31,9 +32,9 @@
             </div>
 
             <div id="headerAppEnd">
-                <button>
+                <label for="headerAppCheckMenu">
                     <i class='bx bx-menu-alt-right'></i>
-                </button>
+                </label>
 
                 <a href="https://github.com/Gean-Lima" target="_blank">
                     <i class='bx bxl-github' ></i>
@@ -76,7 +77,7 @@
             color: white;
         }
 
-        button {
+        label {
             font-size: 1.3rem;
             background: transparent;
             color: white;
@@ -94,25 +95,49 @@
         #headerAppEnd {
             display: flex;
             justify-content: center;
-            gap: .8rem;
+            gap: 1rem;
         }
         
         #headerAppMenu {
             display: none;
-
-            @media screen and (min-width: $media-md) {
-                display: block;
-            }
+            position: fixed;
+            top: 55px;
+            left: 0;
+            width: 100%;
+            background-color: $bg;
+            padding: 18px 0;
 
             ul {
                 padding: 0;
                 margin: 0;
                 display: flex;
-                gap: 10px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 18px;
+                min-height: 100%;
 
                 a {
                     font-size: 1rem;
                 }
+
+                @media screen and (min-width: $media-md) {
+                    flex-direction: row;
+                }
+            }
+
+            @media screen and (min-width: $media-md) {
+                display: block;
+                position: static;
+                background-color: transparent;
+            }
+        }
+
+        #headerAppCheckMenu {
+            display: none;
+
+            &:checked ~ #headerAppMenu {
+                display: block;
             }
         }
     }
