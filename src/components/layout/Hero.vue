@@ -16,7 +16,8 @@ import Matrix from '@/components/matrix/Matrix.vue';
                 </p>
             </div>
             <div id="heroAppOldPC">
-                <img src="/images/old-pc.png" draggable="false" />
+                <img src="/images/old-pc.png" draggable="false" alt="Old PC" title="Old PC"
+                    width="385" height="377" loading="eager" />
                 <video muted autoplay loop src="/videos/tv.mp4"></video>
             </div>
         </div>
@@ -83,6 +84,7 @@ section#heroApp {
         top: 0;
         left: 0;
         max-width: 100%;
+        height: auto;
         z-index: 20;
     }
 

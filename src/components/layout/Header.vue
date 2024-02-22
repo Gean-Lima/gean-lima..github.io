@@ -38,10 +38,12 @@
 
                 <a href="https://github.com/Gean-Lima" target="_blank">
                     <i class='bx bxl-github' ></i>
+                    <span style="display: none;">Github</span>
                 </a>
 
                 <a href="https://www.linkedin.com/in/gean-lima-775b491a2/" target="_blank">
                     <i class='bx bxl-linkedin-square' ></i>
+                    <span style="display: none;">Linkedin</span>
                 </a>
             </div>
         </div>
