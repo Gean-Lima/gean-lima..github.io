@@ -11,7 +11,7 @@ const props = defineProps({
 const emits = defineEmits(['finished']);
 
 const letters = ref([]);
-const packOfLetters = `abcdefghijklmnopqrstuxwyzABCDEFGHIJKLMNOPQRSTUXWYZ0123456789,.;/|{}[]~´'"°?ºª§=+-*&¨%$#@!()'`;
+const packOfLetters = `abcdefghijklmnopqrstuxwyzABCDEFGHIJKLMNOPQRSTUXWYZ0123456789,.;/|{}[]~´'"°?ºª§=+-*&¨%$#@!()'あいうえおかきくけこさしすせそたちつてとなにぬねのんゔはひふへほみむめももやゆよらりるれろ。、ゞゝーをごぞどぼぽゑげぜでべぺぐずづぶぷゐぎじぢびぴぱばだざがわアイウエオヴカキクケコサシスセソタチツテトナニヌネノンハヒフヘホマミムメモヤユヨャュョラリルレロワヰヱヲガギグゲゴゾゼズジザドデヅヂダボベブビバパピプペポ`;
 const matrixColumn = ref();
 
 async function addCharacter(max) {

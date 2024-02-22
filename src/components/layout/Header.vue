@@ -10,7 +10,7 @@
                 <nav id="headerAppMenu">
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="/">
                                 <i class='bx bxs-home'></i>
                                 <span style="display: none;">Início</span>
                             </a>
@@ -21,11 +21,11 @@
                         </li>
 
                         <li>
-                            <a href="">Experiência</a>
+                            <a href="#experience">Experiência</a>
                         </li>
 
                         <li>
-                            <a href="">Portfolio</a>
+                            <a href="#portfolio">Portfolio</a>
                         </li>
                     </ul>
                 </nav>
