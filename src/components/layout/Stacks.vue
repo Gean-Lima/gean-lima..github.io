@@ -1,6 +1,7 @@
 <template>
     <section id="stacks">
         <h2>Stacks</h2>
+        <p>Linguagens e frameworks com que mais trabalho</p>
 
         <div class="stacks-items">
             <section class="stacks-item">
@@ -174,6 +175,13 @@
 
     &>h3 {
         font-size: 2rem;
+    }
+
+    & > p {
+        font-size: .8rem;
+        text-align: center;
+        color: white;
+        margin: 0 0 42px 0;
     }
 
     & div.stacks-items {
