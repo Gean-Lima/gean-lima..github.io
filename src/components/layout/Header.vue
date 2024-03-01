@@ -17,7 +17,7 @@
                         </li>
 
                         <li>
-                            <a href="#stacks">Stacks</a>
+                            <a href="#skills">Skills</a>
                         </li>
 
                         <li>

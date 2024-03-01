@@ -24,7 +24,7 @@
 @import "@/assets/sass/animations";
 
 #experience {
-    padding: 32px 10px;
+    padding: 82px 10px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(/images/matrix.jpg);
     // background-attachment: fixed;
     background-position: center;

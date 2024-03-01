@@ -1,10 +1,10 @@
 <template>
-    <section id="stacks">
-        <h2>Stacks</h2>
+    <section id="skills">
+        <h2>Skills</h2>
         <p>Linguagens e frameworks com que mais trabalho</p>
 
-        <div class="stacks-items">
-            <section class="stacks-item">
+        <div class="skills-items">
+            <section class="skills-item">
                 <div>
                     <img src="/images/php.png" alt="PHP Logo" title="PHP Logo" width="500" height="500" loading="lazy" />
                 </div>
@@ -15,7 +15,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item">
+            <section class="skills-item">
                 <div>
                     <img src="/images/html.png" alt="HTML5 Logo" title="HTML5 Logo" width="500" height="500"
                         loading="lazy" />
@@ -27,7 +27,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item">
+            <section class="skills-item">
                 <div>
                     <img src="/images/css.png" alt="CSS3 Logo" title="CSS3 Logo" width="500" height="500" loading="lazy" />
                 </div>
@@ -38,7 +38,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item">
+            <section class="skills-item">
                 <div>
                     <img src="/images/javascript.png" alt="JavaScript Logo" title="JavaScript Logo" width="500" height="500"
                         loading="lazy" />
@@ -50,7 +50,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item">
+            <section class="skills-item">
                 <div>
                     <img src="/images/dart.png" alt="Dart Logo" title="Dart Logo" width="500" height="500" loading="lazy" />
                 </div>
@@ -64,8 +64,8 @@
 
         <h3>Framewokrs</h3>
 
-        <div class="stacks-items frameworks">
-            <section class="stacks-item framework">
+        <div class="skills-items frameworks">
+            <section class="skills-item framework">
                 <div>
                     <img src="/images/laravel.png" alt="Laravel Logo" title="Laravel Logo" width="500" height="500" loading="lazy" />
                 </div>
@@ -75,7 +75,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item framework">
+            <section class="skills-item framework">
                 <div>
                     <img src="/images/livewire.png" alt="Livewire Logo" title="Livewire Logo" width="500" height="500"
                         loading="lazy" />
@@ -86,7 +86,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item framework">
+            <section class="skills-item framework">
                 <div>
                     <img src="/images/vuejs.png" alt="Vue.js Logo" title="Vue.js Logo" width="500" height="500"
                         loading="lazy" />
@@ -97,7 +97,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item framework">
+            <section class="skills-item framework">
                 <div>
                     <img src="/images/nuxt.png" alt="NUXT Logo" title="NUXT Logo" width="500" height="500"
                         loading="lazy" />
@@ -108,7 +108,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item framework">
+            <section class="skills-item framework">
                 <div>
                     <img src="/images/alpinejs.png" alt="Alpine.js Logo" title="Alpine.js Logo" width="500" height="500"
                         loading="lazy" />
@@ -119,7 +119,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item framework">
+            <section class="skills-item framework">
                 <div>
                     <img src="/images/tailwindcss.png" alt="Tailwindcss Logo" title="Tailwindcss Logo" width="500" height="500" loading="lazy" />
                 </div>
@@ -129,7 +129,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item framework">
+            <section class="skills-item framework">
                 <div>
                     <img src="/images/bootstrap.png" alt="Bootstrap Logo" title="Bootstrap Logo" width="500" height="500"
                         loading="lazy" />
@@ -140,7 +140,7 @@
                 </div>
             </section>
 
-            <section class="stacks-item framework">
+            <section class="skills-item framework">
                 <div>
                     <img src="/images/flutter.png" alt="Flutter Logo" title="Flutter Logo" width="500" height="500"
                         loading="lazy" />
@@ -159,8 +159,8 @@
 @import "@/assets/sass/colors";
 @import "@/assets/sass/animations";
 
-#stacks {
-    padding: 42px 0;
+#skills {
+    padding: 82px 0;
     background: $bg;
 
     h2,
@@ -184,7 +184,7 @@
         margin: 0 0 42px 0;
     }
 
-    & div.stacks-items {
+    & div.skills-items {
         width: 100%;
         max-width: $media-lg;
         margin: 10px auto;
@@ -201,7 +201,7 @@
             flex-wrap: wrap;
             max-width: $media-md;
 
-            .stacks-item.framework {
+            .skills-item.framework {
                 width: calc(50% - 18px) !important;
 
                 h3 {
@@ -223,7 +223,7 @@
         }
     }
 
-    .stacks-item {
+    .skills-item {
         display: flex;
         gap: 18px;
         padding: 16px;
