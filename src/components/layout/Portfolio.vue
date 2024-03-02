@@ -45,6 +45,58 @@ import SlideImages from '@/components/slideImages/SlideImages.vue';
                     </div>
                 </div>
             </div>
+
+            <div class="portfolio-item">
+                <SlideImages :images="[
+                    { src: '/images/projetos/info-brasil/info-brasil.png', alt: 'Site Info Brasil' },
+                    { src: '/images/projetos/info-brasil/info-brasil-ceps.png', alt: 'Site Info Brasil ceps' }
+                ]" style="height: 160px;" />
+
+                <div class="portfolio-item-content">
+                    <h3>Info Brasil</h3>
+                    <a href="https://info-brasil.vercel.app/" target="_blank">info-brasil.vercel.app</a>
+                    <p>Só um projeto simples consumindo a api brasilapi.</p>
+
+                    <div class="badges">
+                        <span>Next.js</span>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <SlideImages :images="[
+                    { src: '/images/projetos/teste-kotas/teste-kotas.png', alt: 'Site Teste Kotas' },
+                    { src: '/images/projetos/teste-kotas/teste-kotas-pokemon.png', alt: 'Site Teste Kotas página pokemon' }
+                ]" style="height: 160px;" />
+
+                <div class="portfolio-item-content">
+                    <h3>Teste Kotas</h3>
+                    <a href="https://teste-kotas.vercel.app/" target="_blank">teste-kotas.vercel.app</a>
+                    <p>Teste feito para um trabalho, consumindo a api pokéapi</p>
+
+                    <div class="badges">
+                        <span>Vue.js</span>
+                        <span>Typescript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <SlideImages :images="[
+                    { src: '/images/projetos/react-notes/react-notes.png', alt: 'Site React Notes' },
+                ]" style="height: 160px;" />
+
+                <div class="portfolio-item-content">
+                    <h3>React Notes</h3>
+                    <a href="https://react-notes-markdown.vercel.app/" target="_blank">react-notes-markdown.vercel.app</a>
+                    <p>Um editor de markdown</p>
+
+                    <div class="badges">
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -88,10 +140,10 @@ import SlideImages from '@/components/slideImages/SlideImages.vue';
     .portfolio-item {
         max-width: 300px;
         box-shadow: 3px 3px 0 $color1;
+        background-color: $bg-secondary;
 
         .portfolio-item-content {
             padding: 10px;
-            background-color: $bg-secondary;
             color: white;
 
             h3, p {

@@ -34,10 +34,6 @@ function nextImage() {
 
     containerImages.value.scrollLeft += offsetWidthContainer;
 }
-
-function openModalImages() {
-    modalStore.openModalWithImages(props.images);
-}
 </script>
 
 <template>
@@ -47,10 +43,13 @@ function openModalImages() {
         </button>
 
         <div class="slide-images-container" ref="containerImages">
-            <div v-for="image, index in images"
-                :key="index"
+            <div v-for="image, index in images" :key="index"
                 class="slide-images-item">
                 <img :src="image.src" :alt="image.alt" />
+
+                <a :href="image.src" target="_blank">
+                    Abrir <i class='bx bx-link-external'></i>
+                </a>
             </div>
         </div>
 
@@ -76,6 +75,7 @@ function openModalImages() {
         background: transparent;
         opacity: 0.3;
         transition: all .2s linear;
+        z-index: 2;
 
         &:hover {
             opacity: 1;
@@ -95,10 +95,23 @@ function openModalImages() {
     }
 
     .slide-images-item {
+        position: relative;
         height: 100%;
         width: 100%;
         background: white;
         flex-shrink: 0;
+
+        a {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: white;
+            background: $color1;
+            font-size: .6rem;
+            display: inline-block;
+            padding: 2px 6px;
+            text-decoration: none;
+        }
 
         img {
             width: 100%;
