@@ -6,7 +6,7 @@ import SlideImages from '@/components/slideImages/SlideImages.vue';
 <template>
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <p>Apenas alguns exemplos simples para mostrar meu trabalho</p>
+        <p>Apenas alguns exemplos simples<br />para mostrar meu trabalho</p>
 
         <div id="portfolioContainer">
             <div class="portfolio-item">

@@ -1,5 +1,8 @@
 <script setup>
+import { useModalImagesStore } from '@/store/modalImages';
 import { ref } from 'vue';
+
+const modalStore = useModalImagesStore();
 
 const props = defineProps({
     images: {
@@ -31,6 +34,10 @@ function nextImage() {
 
     containerImages.value.scrollLeft += offsetWidthContainer;
 }
+
+function openModalImages() {
+    modalStore.openModalWithImages(props.images);
+}
 </script>
 
 <template>
@@ -40,8 +47,10 @@ function nextImage() {
         </button>
 
         <div class="slide-images-container" ref="containerImages">
-            <div v-for="image, index in images" :key="index"
-                class="slide-images-item">
+            <div v-for="image, index in images"
+                :key="index"
+                class="slide-images-item"
+                @click="openModalImages">
                 <img :src="image.src" :alt="image.alt" />
             </div>
         </div>

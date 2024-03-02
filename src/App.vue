@@ -4,6 +4,7 @@ import Hero from '@/components/layout/Hero.vue';
 import Stacks from '@/components/layout/Stacks.vue';
 import Experience from '@/components/layout/Experience.vue';
 import Portfolio from './components/layout/Portfolio.vue';
+import ModalImages from './components/modalImages/ModalImages.vue';
 </script>
 
 <template>
