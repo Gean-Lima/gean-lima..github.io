@@ -49,8 +49,7 @@ function openModalImages() {
         <div class="slide-images-container" ref="containerImages">
             <div v-for="image, index in images"
                 :key="index"
-                class="slide-images-item"
-                @click="openModalImages">
+                class="slide-images-item">
                 <img :src="image.src" :alt="image.alt" />
             </div>
         </div>
